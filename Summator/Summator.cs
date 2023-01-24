@@ -20,6 +20,7 @@ namespace Summator
             }
             return sum;
         }
+        //Here the sample test
         public static void Test_SumTwoNumbers()
         {
             if (Sum(new int[] { 1, 3 }) != 3)
