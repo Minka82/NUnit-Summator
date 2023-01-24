@@ -18,6 +18,7 @@ namespace Summator
             {
                 sum += arr[i];
             }
+            //return sum
             return sum;
         }
         public static void Test_SumTwoNumbers()
