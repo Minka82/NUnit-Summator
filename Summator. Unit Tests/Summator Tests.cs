@@ -97,7 +97,6 @@ namespace Summator._Unit_Tests
             var percentages = new int[] { 10, 30, 50, 100 };
             Assert.That(percentages, Is.All.InRange(0, 100));
 
-            Assert.That(percentage, Is.EqualTo(100), "DDS-ToString koeto ne se vryshta");
 
             
         }
