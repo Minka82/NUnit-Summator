@@ -2,6 +2,14 @@ namespace Summator._Unit_Tests
 {
     public class SummatorTests
     {
+        [SetUp]
+
+        public void Setup()
+        {
+            Console.WriteLine("Test call: " + DateTime.Now.ToString());
+        }
+
+
         [Test]
         public void Test_Summator_SumTwoPositivNumbers()
         {
@@ -23,6 +31,7 @@ namespace Summator._Unit_Tests
 
             Assert.AreEqual(expected, actual);
         }
+        [Category("High")]
         [Test]
         public void Test_Summator_OneNumber()
         {
@@ -33,6 +42,8 @@ namespace Summator._Unit_Tests
 
             Assert.AreEqual(expected, actual);
         }
+        [Category("Smoke")]
+        [Category("Low")]
         [Test]
         public void Test_Summator_ZeroNumber()
         {
@@ -42,6 +53,7 @@ namespace Summator._Unit_Tests
 
             Assert.AreEqual(expected, actual);
         }
+        [Category("High")]
         [Test]
         public void Test_Summator_BigNumbers()
         {
@@ -68,39 +80,11 @@ namespace Summator._Unit_Tests
             Assert.That(expected, Is.EqualTo(actual));
 
             Assert.False(9 == 8);
+        
         }
-
-        [Test]
-        public void AssertionsExample()
-        {
-            //Assert boolean condition 
-            Assert.That(9 == 9);
-
-            Assert.That(9, Is.GreaterThan(6));
-
-            //Reange Assertions
-            double percentage = 99.95;
-            Assert.That(percentage, Is.InRange(80, 100));
-
-            Assert.That("I want to become the best QA", 
-                Does.Contain("QA"));
-
-            //regex
-            string date = "7/11/2021";
-            Assert.That(date, Does.Match(@"^\d{1,2}/\d{1,2}/\d{4}$"));
-
-            Assert.That(() => "abc"[45], Throws.TypeOf<IndexOutOfRangeException>());
-            Assert.That(() => "abc"[45], Throws.InstanceOf<Exception>());
-
-            Assert.That(new int [] {4, 5, 6}, Has.Member(6));
-
-            var percentages = new int[] { 10, 30, 50, 100 };
-            Assert.That(percentages, Is.All.InRange(0, 100));
-
-
-            
-        }
-
+       
     }
+
 }
+
 

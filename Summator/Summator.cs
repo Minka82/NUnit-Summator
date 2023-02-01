@@ -25,9 +25,9 @@ namespace Summator
 
 
         }
-        public static double Average(int[] arr)
+        public static int Average(int[] arr)
         {
-            double sum = 0;
+            int sum = 0;
 
             for (int i = 0; i < arr.Length; i++)
             {
