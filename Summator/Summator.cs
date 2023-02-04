@@ -24,11 +24,9 @@ namespace Summator
 
         }
 
-        
-    }
+           
 
-    public static double Average(int[] arr)
-    {
+        public static double Average(int[] arr)
         {
             double sum = 0;
 
@@ -38,11 +36,6 @@ namespace Summator
             }
             //return sum
             return sum / arr.Length;
-
-
-
-
-
 
         }
     }
