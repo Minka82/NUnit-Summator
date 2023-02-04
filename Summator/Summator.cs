@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace Summator
 {
-    public static class Summator
+    public class Summator
     {
         //Test mathod for sum of array from numbers
-        public static long Sum(int[] arr)
+        public static int Sum(int[] arr)
         {
 
-             long sum = 0;
+            int sum = 0;
 
             for (int i = 0; i < arr.Length; i++)
             {
@@ -22,9 +22,13 @@ namespace Summator
             //return sum
             return sum;
 
-
         }
-        public static double Average(int[] arr)
+
+        
+    }
+
+    public static double Average(int[] arr)
+    {
         {
             double sum = 0;
 
@@ -37,8 +41,12 @@ namespace Summator
 
 
 
+
+
+
         }
     }
+    
 }
 
 

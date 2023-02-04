@@ -5,7 +5,7 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Summator", "Summator\Summator.csproj", "{E80CA1B0-EE2C-4123-A4B6-E67FDAF6D0A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Summator. Unit Tests", "Summator. Unit Tests\Summator. Unit Tests.csproj", "{06972BBA-FAED-4F5F-AD36-8764CBFA3D3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Summator. Unit Tests", "Summator. Unit Tests\Summator. Unit Tests.csproj", "{06972BBA-FAED-4F5F-AD36-8764CBFA3D3E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

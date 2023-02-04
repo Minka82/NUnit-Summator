@@ -37,7 +37,6 @@ namespace Summator._Unit_Tests
         {
             var nums = new[] { 6 };
             var actual = Summator.Sum(nums);
-
             var expected = 6;
 
             Assert.AreEqual(expected, actual);
